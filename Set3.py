@@ -52,14 +52,14 @@ print("\nTask 6")
 
 
 def draw():
+    drawing = ""
     if i % 2 == 0 and not (x == 0):
-        for n in range(y):
-            print("+---", end="")
-        print("+")
+            line_1 = y * "+---" + "+"
+            drawing += line_1
     elif not (x == 0):
-        for k in range(y):
-            print("|" + "   ", end="")
-        print("|")
+            line_2 = y * "|   " + "|"
+            drawing += line_2
+    print(drawing)
 
 
 x = int(input("Enter the first number: "))
