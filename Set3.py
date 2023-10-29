@@ -33,16 +33,20 @@ while not (x == "stop"):
 
 print("\nTask 5")
 x = int(input("Enter the number: "))
-for i in range(x):
-    print("|....", end="")
-print("|")
-for i in range(x + 1):
-    if i < 9:
-        print(str(i) + "    ", end="")
-    elif 99 < i >= 9:
-        print(str(i) + "   ", end="")
-    elif i >= 99:
-        print(str(i) + "  ", end="")
+lower_ruler = ""
+if x > 0:
+    upper_ruler = x * "|...." + "|"
+    for i in range(x + 1):
+        if i < 9:
+            lower_ruler += (str(i) + "    ")
+        elif 99 > i >= 9:
+            lower_ruler += (str(i) + "   ")
+        elif i >= 99:
+            lower_ruler += (str(i) + "  ")
+    ruler = upper_ruler + "\n" + lower_ruler
+    print(ruler)
+else:
+    print("Wrong input")
 
 print("\nTask 6")
 
