@@ -1,3 +1,39 @@
+print("\nTask 2")
+
+
+def ruler(x):
+    line = ""
+    for i in range(x):
+        line = line + ("|....")
+    line += ("|\n")
+    for i in range(x+1):
+        if i < 9:
+            line += (str(i) + "    ")
+        elif i >= 9 and i < 99:
+            line += (str(i) + "   ")
+        elif i >= 99:
+            line += (str(i) + "  ")
+    return line
+
+
+def draw(x, y):
+    line = ""
+    for i in range((x * 2) + 1):
+        if i % 2 == 0 and not (x == 0):
+            for j in range(y):
+                line += ("+---")
+            line += ("+\n")
+        elif not (x == 0):
+            for k in range(y):
+                line += ("|" + "   ")
+            line += ("|\n")
+    return line
+
+
+print(ruler(7))
+print("\n")
+print(draw(3, 4))
+
 print("\nTask 3")
 
 
