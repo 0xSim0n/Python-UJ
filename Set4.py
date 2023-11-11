@@ -38,13 +38,15 @@ print("\nTask 3")
 
 
 def factorial(n):
-    result = 1
-    for i in range(1, n + 1):
-        result = result * i
-    return result
+    i = 1
+    s = 1
+    while i <= n:
+        s *= i
+        i += 1
+    return s
 
 
-print(factorial(8))
+print(factorial(5))
 
 print("\nTask 4")
 
@@ -68,15 +70,26 @@ print(fibonacci(2))
 print("\nTask 5")
 
 
-def odwracanie(L, left, right):
-    new_list = L[right:left - 1:-1]
-    for i in range(0, right-left+1):
-        L.insert(left, new_list[len(new_list) - 1 - i])
-        L.pop(right + 1)
-    return L
+def odwracanie_iteracyjne(L, left, right):
+    while left < right:
+        L[left], L[right] = L[right], L[left]
+        left += 1
+        right -= 1
 
 
-print(odwracanie([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 2, 4))
+def odwracanie_rekurencyjne(L, left, right):
+    if left < right:
+        L[left], L[right] = L[right], L[left]
+        odwracanie_rekurencyjne(L, left + 1, right - 1)
+
+
+L = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+M = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+odwracanie_iteracyjne(L, 4, 8)
+odwracanie_rekurencyjne(M, 2, 6)
+print(L)
+print(M)
+
 
 print("\n Task 6")
 
