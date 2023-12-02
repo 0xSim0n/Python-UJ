@@ -46,11 +46,28 @@ class DaysIterator:
 
 class TestIterators(unittest.TestCase):
 
-    def SetUp(self):
-        self.n = 10
-        self.first_iterator = ZeroOneIterator
-        self.second_iterator = RandomIterator
-        self.third_iterator = DaysIterator
+    def setUp(self):
+        self.first_iterator = ZeroOneIterator()
+        self.second_iterator = RandomIterator()
+        self.third_iterator = DaysIterator()
 
-    def TestZeroOneIterator(self):
-        for _ in range(self.n): self.first_iterator.__next__()
+    def test_ZeroOneIterator(self):
+        expected_values = [0, 1, 0, 1, 0, 1, 0, 1]
+        actual_values = [next(self.first_iterator) for _ in range(len(expected_values))]
+        self.assertEqual(actual_values, expected_values)
+
+    def test_RandomIterator(self):
+        expected_values = ["N", "W", "S", "E"]
+        actual_values = [next(self.second_iterator) for _ in range(len(expected_values))]
+
+        for value in actual_values:
+            self.assertIn(value, expected_values)
+
+    def test_DaysIterator(self):
+        expected_values = [0, 1, 2, 3, 4, 5, 6, 0, 1, 2, 3, 4, 5, 6, 0]
+        actual_values = [next(self.third_iterator) for _ in range(len(expected_values))]
+        self.assertEqual(actual_values, expected_values)
+
+
+if __name__ == '__main__':
+    unittest.main()
