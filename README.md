@@ -101,3 +101,12 @@ Stworzyć plik fracs.py i zapisać w nim funkcje do działań na ułamkach. Uła
 **<< SET 6>>**
 
 W pliku fracsv2.py zdefiniować klasę Frac wraz z potrzebnymi metodami. Ułamek jest reprezentowany przez parę liczb całkowitych. Napisać kod testujący moduł fracs.
+
+**<< SET 7>>**
+
+W pliku rectangles.py zdefiniować klasę Rectangle wraz z potrzebnymi metodami. Wykorzystać wyjątek ValueError do obsługi błędów. Napisać kod testujący moduł rectangles.
+
+Stworzyć następujące iteratory nieskończone:
+(a) zwracający 0, 1, 0, 1, 0, 1, ...,
+(b) zwracający przypadkowo jedną wartość z ("N", "E", "S", "W")
+(c) zwracający 0, 1, 2, 3, 4, 5, 6, 0, 1, 2, 3, 4, 5, 6, ... .
