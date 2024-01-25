@@ -1,5 +1,5 @@
 import pytest
-from rectangles import Rectangle, Point
+from Set7.rectangles import Rectangle, Point
 import math
 
 
