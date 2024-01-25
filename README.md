@@ -110,3 +110,25 @@ Stworzyć następujące iteratory nieskończone:
 (a) zwracający 0, 1, 0, 1, 0, 1, ...,
 (b) zwracający przypadkowo jedną wartość z ("N", "E", "S", "W")
 (c) zwracający 0, 1, 2, 3, 4, 5, 6, 0, 1, 2, 3, 4, 5, 6, ... .
+
+**<< SET 8>>**
+
+Wzbogacić klasę Rectangle o nowe funkcjonalności.
+Stworzyć metodę klasy o nazwie 'from_points', która pozwoli utworzyć prostokąt z listy lub krotki zawierającej dwa punkty, lewy dolny i prawy górny.
+Za pomocą dekoratora @property dodać atrybuty wirtualne zwracające liczbę (współrzędną): top, left, bottom, right, width, height. Dodać atrybuty wirtualne zwracające Point: topleft, bottomleft, topright, bottomright. Można rozważyć zamianę metody center() na atrybut wirtualny.
+W osobnym pliku przygotować testy klasy Rectangle w formacie dla modułu 'pytest'.
+
+**<< SET 9>>**
+
+Zaimplementować prostą grę o topieniu padającego śniegu. Przy górnej krawędzi ekranu pojawiają się losowo płatki śniegu, które spadają w dół ruchem jednostajnym. Zadaniem gracza jest topienie płatków śniegu przez klikanie na nie myszą. Celem gry jest niedopuszczenie, aby jakiś płatek śniegu dotarł do dolnej krawędzi ekranu.
+Można rozważyć wariant gry, w którym tworzą się zaspy śniegu, a gra kończy się, gdy zaspa urośnie do górnej krawędzi ekranu.
+
+**<< SET 10>>**
+
+Napisać program z GUI, który symuluje rzut kostką sześcienną. Program powinien mieć przycisk uruchamiający rzut kostką i etykietę wyświetlającą wynik.
+
+**<< SET 11>>**
+
+Do klasy DoubleList dopisać nowe metody.
+
+**<<SET 12>>**
