@@ -66,5 +66,6 @@ class TestStack(unittest.TestCase):
         s.push(1)
         self.assertFalse(s.is_empty())
 
+
 if __name__ == "__main__":
     unittest.main()

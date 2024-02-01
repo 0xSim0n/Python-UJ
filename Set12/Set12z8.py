@@ -71,5 +71,6 @@ class TestRandomQueue(unittest.TestCase):
         queue.clear()
         self.assertTrue(queue.is_empty())
 
+
 if __name__ == "__main__":
     unittest.main()
