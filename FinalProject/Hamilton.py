@@ -109,6 +109,9 @@ def on_button_click():
         click_count_var.set((click_count_var.get() + 1) % len(cycles))
         delet_previous()
         draw_Hamilton((click_count_var.get() + 1) % len(cycles))
+        label2 = tk.Label(root, text=f'Cykl Hamiltona: {((click_count_var.get()) % len(cycles)) + 1}',
+                          font=("Arial", 16, "bold"))
+        label2.place(x=320, y=0)
 
 def has_cycle():
     if len(cycles) == 0:
@@ -119,10 +122,10 @@ def has_cycle():
 # Input
 adj = [
     [0, 1, 0, 1, 0],
-    [1, 0, 1, 0, 1],
-    [0, 1, 1, 1, 1],
-    [1, 0, 1, 0, 1],
-    [1, 1, 0, 1, 0]
+    [1, 0, 0, 1, 1],
+    [0, 0, 1, 1, 1],
+    [1, 1, 1, 1, 1],
+    [1, 1, 1, 1, 0]
 ]
 
 circle_centers =[]
@@ -147,7 +150,8 @@ has_cycle()
 click_count_var = tk.IntVar()
 click_count_var.set(0)
 
-button = tk.Button(root, text=" Next ", command=on_button_click, width=6, height=2, font=("Arial", 16, "bold"), bg="yellow")
+button = tk.Button(root, text=" Next ", command=on_button_click, width=6, height=2, font=("Arial", 16, "bold"),
+                   bg="yellow")
 button.pack()
 
 label = tk.Label(root, text = " Ilość cykli Hamiltona: " + str(len(cycles)), font=("Arial", 16, "bold"))
