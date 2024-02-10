@@ -132,3 +132,11 @@ Napisać program z GUI, który symuluje rzut kostką sześcienną. Program powin
 Do klasy DoubleList dopisać nowe metody.
 
 **<<SET 12>>**
+
+Poprawić implementację tablicową stosu tak, aby korzystała z wyjątków w przypadku pojawienia się błędu. Metoda pop() ma zgłaszać błąd w przypadku pustego stosu. Metoda push() ma zgłaszać błąd w przypadku przepełnienia stosu. Napisać kod testujący stos.
+
+Stworzyć ADT w postaci kolejki losowej, z której elementy będą pobierane w losowej kolejności. Zadbać o to, aby każda operacja była wykonywana w stałym czasie, niezależnie od liczby elementów w kolejce.
+
+**<<Final Project>>**
+
+Znalezienie i zwizualizowanie cykli Hamiltona na grafie.
