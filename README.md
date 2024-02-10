@@ -137,6 +137,6 @@ Poprawić implementację tablicową stosu tak, aby korzystała z wyjątków w pr
 
 Stworzyć ADT w postaci kolejki losowej, z której elementy będą pobierane w losowej kolejności. Zadbać o to, aby każda operacja była wykonywana w stałym czasie, niezależnie od liczby elementów w kolejce.
 
-**<<Final Project>>**
+**<< Final Project >>**
 
 Znalezienie i zwizualizowanie cykli Hamiltona na grafie.
